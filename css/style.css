@@ -53,7 +53,7 @@ header p {
 
 nav {
 	background-color: var(--secondary-bg);
-	height: 5vh;
+	height: 35px;
 	border-top: 1px solid black;
 }
 
@@ -65,7 +65,7 @@ nav ul {
 	height: 100%;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: stretch;
 	flex-direction: row;
 }
 
@@ -92,15 +92,63 @@ nav ul li a {
 nav ul li a:hover {
 	background-color: var(--secondary-font);
 	color: var(--secondary-bg);
-	border-bottom: 5px solid var(--primary-font);
+	border-bottom: 3px solid var(--primary-bg);
 }
 
 main {
 	width: 100vw;
-	height: 65vh;
+	height: 70vh;
 	display: flex;
 	justify-content: flex-start;
+	align-items: stretch;
 	flex-direction: row;
+}
+
+main aside {
+	background-color: var(--secondary-font);
+	width: 30%;
+	padding: 1em;
+}
+
+main aside p {
+	padding: 1em 0;
+}
+
+main aside div {
+	width: 380px;
+	height: 230px;
+	background-color: var(--primary-font);
+}
+
+main aside img {
+	width: 100%;
+	height: auto;
+}
+
+main section {
+	width: 70%;
+	padding: 1em;
+	background-color: var(--primary-font);
+}
+
+main section p {
+	padding-top: 1em;
+}
+
+main section div {
+	background-color: var(--primary-bg);
+	width: 80%;
+	height: 50%;
+	margin: 1em 0px;
+}
+
+footer {
+	height: 10vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-bg);
 }
 
 @media screen and (max-width: 700px) {
