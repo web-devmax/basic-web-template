@@ -7,16 +7,24 @@
 	● #82A0BC
 */
 
+@font-face {
+	font-family: Montserrat;
+	src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
 :root {
 	--primary-bg: #304D6D;
 	--secondary-bg: #545E75;
 	--primary-font: #A7CCED;
 	--secondary-font: #63ADF2;
 	--dimmer: #82A0BC;
+	--fonts: Montserrat, sans-serif;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: var(--fonts);
 }
