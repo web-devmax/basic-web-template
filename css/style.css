@@ -1,0 +1,22 @@
+/*
+	Color Palettes:
+	● #545E75
+	● #63ADF2
+	● #A7CCED
+	● #304D6D
+	● #82A0BC
+*/
+
+:root {
+	--primary-bg: #304D6D;
+	--secondary-bg: #545E75;
+	--primary-font: #A7CCED;
+	--secondary-font: #63ADF2;
+	--dimmer: #82A0BC;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
