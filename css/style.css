@@ -14,8 +14,8 @@
 }
 
 :root {
-	--primary-bg: #304D6D;
-	--secondary-bg: #545E75;
+	--primary-bg: #545E75;
+	--secondary-bg: #304D6D;
 	--primary-font: #A7CCED;
 	--secondary-font: #63ADF2;
 	--dimmer: #82A0BC;
@@ -23,8 +23,97 @@
 }
 
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	font-family: var(--fonts);
+}
+
+body {
+	background-color: var(--primary-bg);
+	height: 100vh;
+}
+
+header {
+	background-color: var(--secondary-bg);
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+header h1 {
+	color: var(--primary-font);
+}
+
+header p {
+	color: var(--secondary-font);
+}
+
+nav {
+	background-color: var(--secondary-bg);
+	height: 5vh;
+	border-top: 1px solid black;
+}
+
+nav ul {
+	list-style-type: none;
+	list-style-position: inside;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+
+nav ul li {
+	padding: 1em;
+	width: 100px;
+	height: 100%;
+	position: relative;
+}
+
+nav ul li a {
+	color: var(--primary-font);
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	background-color: var(--secondary-font);
+	color: var(--secondary-bg);
+	border-bottom: 5px solid var(--primary-font);
+}
+
+main {
+	width: 100vw;
+	height: 65vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+	nav {
+		height: 35vh;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		width: 100%;
+		height: 100px;
+	}
 }
